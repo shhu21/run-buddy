@@ -70,6 +70,7 @@ footer h2 {
     padding: 60px;
   }
 
+  /* hero section styles */
   .hero {
       height: 600px;
       background-image: url(../images/hero-bg.jpg);
@@ -122,19 +123,28 @@ footer h2 {
       padding: 10px 20px;
       font-size: 16px;
   }
+  /* hero section end */
 
-  .intro {
-      text-align: center;
-  }
-
-  .intro h2 {
+  .section-title {
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
     display: inline-block;
+    border-bottom: 3px solid;
+  }
+  
+  .primary-border {
+    border-color: #fce138;
+  }
+  
+  .secondary-border {
+    border-color: #39a6b2;
+  }
+
+  /* 'what we do' styles section */
+  .intro {
+      text-align: center;
   }
 
   .intro p {
@@ -143,4 +153,35 @@ footer h2 {
       width: 80%;
       font-size: 20px;
       margin: 0 auto;
+  }
+  /* 'what we do' section end */
+
+  /* 'what you do' styles section */
+  .steps {
+      text-align: center;
+      background: #fce138;
+  }
+
+  .steps div {
+    margin-bottom: 80px;
+  }
+  
+  .steps img {
+    width: 15%;
+    margin: 10px 0;
+  } 
+  
+  .steps h3 {
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+  }
+  
+  .steps p {
+    color: #39a6b2;
+    font-size: 23px;
+  }
+
+  .steps span {
+      font-size: 38px;
   }
