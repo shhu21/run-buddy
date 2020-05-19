@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 body {
-    /* more on this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
 
-  /* apply styles to <header> */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* header styles */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -42,7 +49,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
 }
+/* header end */
 
+/* footer styles */
 footer {
     background: #fce138;
     width: 100%;
@@ -65,6 +74,7 @@ footer h2 {
   footer a {
     color: #024e76;
   }
+  /* footer end */
 
   section {
     padding: 60px;
@@ -84,10 +94,12 @@ footer h2 {
       padding: 20px;
       width: 500px;
       color: #024e76;
+
       /*can be short-handed as 'border: solid 3px #024e76;'*/
       border-style: solid;
       border-width: 3px;
       border-color: #024e76;
+
       position: absolute;
       bottom: 120px;
       right: 140px;
@@ -184,4 +196,45 @@ footer h2 {
 
   .steps span {
       font-size: 38px;
+  }
+  /* what you do section end */
+
+  /* trainer section styles */
+  .trainers {
+      text-align: center;
+  }
+
+  .trainer {
+      width: 900px;
+      margin: 0 auto 30px auto;
+      background: #024e76;
+      color: #fce138;
+      overflow: auto;
+  }
+
+  .trainer img {
+      width: 35%;
+      float: left;
+  }
+
+  .trainer-bio {
+      padding: 35px;
+      float: left;
+      width: 65%;
+  }
+
+  .trainer-bio h3 {
+      font-size: 32px;
+      margin-bottom: 8px;
+  }
+
+  .trainer-bio h4 {
+      font-weight: lighter;
+      font-size: 26px;
+      margin-bottom: 25px;
+  }
+
+  .trainer-bio p {
+      font-size: 17px;
+      line-height: 1.3;
   }
