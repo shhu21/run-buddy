@@ -156,14 +156,20 @@ footer h2 {
       font-size: 16px;
   }
   /* hero section end */
+  /* Flex styles */
+  .flex-row {
+      display: flex;
+  }
+  /**/
 
   .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
   
   .primary-border {
@@ -175,11 +181,8 @@ footer h2 {
   }
 
   /* 'what we do' styles section */
-  .intro {
-      text-align: center;
-  }
-
   .intro p {
+      text-align: center;
       line-height: 1.7;
       color: #38a6b2;
       width: 80%;
@@ -190,7 +193,6 @@ footer h2 {
 
   /* 'what you do' styles section */
   .steps {
-      text-align: center;
       background: #fce138;
   }
 
@@ -221,7 +223,6 @@ footer h2 {
 
   /* trainer section styles */
   .trainers {
-      text-align: center;
   }
 
   .trainer {
@@ -263,7 +264,6 @@ footer h2 {
   .contact {
       margin: 0 auto 30px auto;
       background: #024e76;
-      text-align: center;
   }
 
   .contact h2 {
