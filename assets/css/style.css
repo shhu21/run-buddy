@@ -366,8 +366,62 @@ font-size: 18px;
     flex: 1;
 }
 
-.trainer img {
+.trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+}
+
+.trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+}
+
+.trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+}
+
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.trainer:hover .trainer-img::after {
+    opacity: 1;
+}
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(252, 225, 56, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+    opacity: 0;  
+    transition: linear;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+}
+
+.trainer-img h3 {
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    transition: 0.6s;
+}
+
+.trainer-img h4 {
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    transition: 0.6s;
 }
 
 .trainer-bio {
@@ -377,12 +431,14 @@ font-size: 18px;
 
 .trainer-bio h3 {
     font-size: 28px;
+    display: none;
 }
 
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    display: none;
 }
 
 .trainer-bio p {
@@ -596,22 +652,26 @@ color: var(--primary-color);
 
     .service-grid-container {
         grid-template-columns: 1fr 1fr;
-      }
+    }
     
-      .service-grid-item.basic {
+    .service-grid-item.basic {
         grid-column: 1;
-      }
+    }
     
-      .service-grid-item.both {
+    .service-grid-item.both {
         grid-column: 1 / -1;
-      }
+    }
     
-      .service-grid-item.cancel {
+    .service-grid-item.cancel {
         transform: none;
         writing-mode: unset;
         grid-column: 1 / -1;
         grid-row: -1;
-      }
+    }
+
+    .trainer-img h3, trainer-img h4, trainer-img::after{
+        display: none;
+    }
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
