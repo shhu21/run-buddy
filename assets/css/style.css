@@ -23,6 +23,13 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header h1 {
@@ -30,6 +37,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -57,6 +65,14 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 /* header end */
 
@@ -74,334 +90,367 @@ footer h2 {
     color: #024e76;
     font-size: 30px;
     margin: 0;
-  }
+}
 
-  footer div {
-    line-height: 1.5;
+footer div {
+line-height: 1.5;
+text-align: right;
+}
+
+footer a {
+color: #024e76;
+}
+/* footer end */
+
+section {
+padding: 60px;
+}
+
+/* hero section styles */
+.hero {
+    background-image: url(../images/hero-bg.jpg);
+    background-attachment: fixed;
+    background-position: 80%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hero-cta {
+    width: 35%;
     text-align: right;
-  }
-
-  footer a {
-    color: #024e76;
-  }
-  /* footer end */
-
-  section {
-    padding: 60px;
-  }
-
-  /* hero section styles */
-  .hero {
-      background-image: url(../images/hero-bg.jpg);
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: flex-start;
-  }
-
-  .hero-cta {
-      width: 35%;
-      text-align: right;
-      margin: 3.5%;
-      color: #fff;
-      font-size: 18px;
-      line-height: 1.2;
-  }
-
-  .hero-cta h2 {
-      font-style: italic;
-      font-size: 55px;
-      color: #fce138;
-  }
-
-  .hero-form {
-      background-color: #fce138;
-      padding: 20px;
-      color: #024e76;
-      border-style: solid;
-      border-color: #024e76;
-      width: 40%;
-      margin: 3.5%;
-  }
-
-  .hero-form h3 {
-      font-size: 24px;
-      margin: 0;
-  }
-
-  .hero-form p {
-      margin: 5px 0 15px 0;
-  }
-
-  .form-input {
-      font-size: 16px;
-      border: solid 1px #024e76;
-      display: block;
-      padding: 7px 15px;
-      color: #024e76;
-      width: 100%;
-      margin-bottom: 15px;
-  }
-
-  .hero-form label {
-      margin: 0 5px;
-  }
-
-  .hero-form button {
-      color: #fce138;
-      background-color: #024e76;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-  }
-  /* hero section end */
-  /* Flex styles */
-  .flex-row {
-      display: flex;
-  }
-  /**/
-
-  .section-title {
-    font-size: 48px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-  }
-  
-  .primary-border {
-    border-color: #fce138;
-  }
-  
-  .secondary-border {
-    border-color: #39a6b2;
-  }
-
-  /* 'what we do' styles section */
-  .intro p {
-      text-align: center;
-      line-height: 1.7;
-      color: #38a6b2;
-      width: 80%;
-      font-size: 20px;
-      margin: 0 auto;
-  }
-  /* 'what we do' section end */
-
-  /* 'what you do' styles section */
-  .steps {
-      background: #fce138;
-  }
-
-  .step {
-      margin: 50px auto;
-      padding-bottom: 50px;
-      width: 50%;
-      border-bottom: 1px solid #39a6b2;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-  }
-  
-  .step h3 {
-    color: #024e76;
-    font-size: 46px;
-    flex: 1 30%;
-  }
-  
-  .step-text p {
-    color: #39a6b2;
+    margin: 3.5%;
+    color: #fff;
     font-size: 18px;
-  }
+    line-height: 1.2;
+}
 
-  .step-text h4 {
-      font-size: 26px;
-      line-height: 1.5;
-      color: #024e76;
-  }
-
-  .step-info {
-      flex: 2 70%;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-  }
-
-  .step-img {
-      flex: 1 12%;
-      margin-right: 20px;
-  }
-
-  .step-img img {
-      max-width: 100%;
-  }
-
-  .step-text {
-      flex: 12;
-  }
-  /* what you do section end */
-
-  /* trainer section styles */
-  .trainers {
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-  }
-
-  .trainer {
-      margin: 20px;
-      background: #024e76;
-      color: #fce138;
-      flex: 1;
-  }
-
-  .trainer img {
-      width: 100%;
-  }
-
-  .trainer-bio {
-      padding: 25px;
-      line-height: 1.3;
-  }
-
-  .trainer-bio h3 {
-      font-size: 28px;
-  }
-
-  .trainer-bio h4 {
-      font-weight: lighter;
-      font-size: 22px;
-      margin-bottom: 15px;
-  }
-
-  .trainer-bio p {
-      font-size: 17px;
-  }
-
-  /* Reach Out section styles */
-  .contact {
-      margin: 0 auto 30px auto;
-      background: #024e76;
-  }
-
-  .contact-info {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-  }
-
-  .contact-info > * {
-      flex: 1;
-      margin: 15px;
-  }
-
-  .contact h2 {
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
     color: #fce138;
-  }
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
-  .contact-info div {
-      color: white;
-  }
+.hero-form {
+    background-color: rgb(252, 225, 56, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    color: #024e76;
+    border-style: solid;
+    border-color: #024e76;
+    width: 40%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
-  .contact-info h3 {
-      color: #fce138;
-      font-size: 32px;
-  }
+.hero-form button:hover {
+background-color: #39a6b2;  
+}
 
-  .contact-info a {
-      color: #fce138;
-  }
+.hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+}
 
-  .contact-info p, .contact-info address {
-      margin: 20px 0;
-      line-height: 1.5;
-      font-size: 16px;
-      font-style: normal;
-  }
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
 
-  .contact-form input, .contact-form textarea {
-      border: 1px solid #024e76;
-      display: block;
-      padding: 7px 15px;
-      font-size: 16px;
-      color: #024e76;
-      width: 100%;
-      margin-bottom: 15px;
-      margin-top: 5px;
-  }
+.form-input {
+    font-size: 16px;
+    border: solid 1px #024e76;
+    display: block;
+    padding: 7px 15px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
 
-  .contact-form button {
-      width: 100%;
-      border: none;
-      background: #fce138;
-      color: #024e76;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 16px;
-  }
-  /**/
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
 
-  /* CSS Grid styles */
-  .services {
-      background: #fce138;
-  }
+.hero-form label {
+    margin: 0 5px;
+}
 
-  .service-grid-wrapper {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-  }
+.hero-form button {
+    color: #fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+/* hero section end */
+/* Flex styles */
+.flex-row {
+    display: flex;
+}
+/**/
 
-  .service-grid-container {
-      display: grid;
-      grid-template-rows: repeat(5, 1fr) 2fr;
-      grid-template-columns: 1fr repeat(2, 4fr);
-      background: lightyellow;
-      width: 80%;
-      display: grid;
-      border: 2px solid #024e76;
-      color: #024e76;
-      font-size: 1.2rem;
-  }
+.section-title {
+font-size: 48px;
+color: #024e76;
+border-bottom: 3px solid;
+padding-bottom: 20px;
+text-align: center;
+margin: 0 auto 35px auto;
+width: 50%;
+}
 
-  .service-grid-item {
-      padding: 15px 0;
-      border: 2px solid #024e76;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-  }
+.primary-border {
+border-color: #fce138;
+}
 
-  .service-grid-item.basic {
-      grid-column: 2 / span 1;
-  }
+.secondary-border {
+border-color: #39a6b2;
+}
 
-  .service-grid-item.both {
-      grid-column: 2 / span 2;
-  }
+/* 'what we do' styles section */
+.intro p {
+    text-align: center;
+    line-height: 1.7;
+    color: #38a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+/* 'what we do' section end */
 
-  .service-grid-item.cancel {
-      grid-row: 1 / -1;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      grid-column: 1;
-  }
+/* 'what you do' styles section */
+.steps {
+    background: #fce138;
+}
 
-  .grid-head, .grid-price, .service-grid-item.cancel {
-      font-size: 1.5rem;
-      font-weight: bold;
-  }
-  /**/
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
-  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
+}
+
+.step h3 {
+color: #024e76;
+font-size: 46px;
+flex: 1 30%;
+}
+
+.step-text p {
+color: #39a6b2;
+font-size: 18px;
+}
+
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
+    flex: 12;
+}
+/* what you do section end */
+
+/* trainer section styles */
+.trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trainer {
+    margin: 20px;
+    background: #024e76;
+    color: #fce138;
+    flex: 1;
+}
+
+.trainer img {
+    width: 100%;
+}
+
+.trainer-bio {
+    padding: 25px;
+    line-height: 1.3;
+}
+
+.trainer-bio h3 {
+    font-size: 28px;
+}
+
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.trainer-bio p {
+    font-size: 17px;
+}
+
+/* Reach Out section styles */
+.contact {
+    margin: 0 auto 30px auto;
+    background: #024e76;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.contact h2 {
+color: #fce138;
+}
+
+.contact-info div {
+    color: white;
+}
+
+.contact-info h3 {
+    color: #fce138;
+    font-size: 32px;
+}
+
+.contact-info a {
+    color: #fce138;
+}
+
+.contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.75);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+/**/
+
+/* CSS Grid styles */
+.services {
+    background: #fce138;
+}
+
+.service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.service-grid-container {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    grid-template-columns: 1fr repeat(2, 4fr);
+    background: lightyellow;
+    width: 80%;
+    display: grid;
+    border: 2px solid #024e76;
+    color: #024e76;
+    font-size: 1.2rem;
+}
+
+.service-grid-item {
+    padding: 15px 0;
+    border: 2px solid #024e76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.service-grid-item.basic {
+    grid-column: 2 / span 1;
+}
+
+.service-grid-item.both {
+    grid-column: 2 / span 2;
+}
+
+.service-grid-item.cancel {
+    grid-row: 1 / -1;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    grid-column: 1;
+}
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/**/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
